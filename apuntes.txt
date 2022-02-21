@@ -1,0 +1,38 @@
+❯ stack new exercitium2
+Downloading template "new-template" to create project "exercitium2" in exercitium2/ ...
+
+The following parameters were needed by the template but not provided: author-name
+You can provide them in /home/chema/.stack/config.yaml, like this:
+templates:
+  params:
+    author-name: value
+Or you can pass each one as parameters like this:
+stack new exercitium2 new-template -p "author-name:value"
+
+
+The following parameters were needed by the template but not provided: author-email, author-name, category, copyright, github-username
+You can provide them in /home/chema/.stack/config.yaml, like this:
+templates:
+  params:
+    author-email: value
+    author-name: value
+    category: value
+    copyright: value
+    github-username: value
+Or you can pass each one as parameters like this:
+stack new exercitium2 new-template -p "author-email:value" -p "author-name:value" -p "category:value" -p "copyright:value" -p "github-username:value"
+
+Looking for .cabal or package.yaml files to use to init the project.
+Using cabal packages:
+- exercitium2/
+
+Selecting the best among 20 snapshots...
+
+* Matches https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/18/26.yaml
+
+Selected resolver: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/18/26.yaml
+Initialising configuration using resolver: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/18/26.yaml
+Total number of user packages considered: 1
+Writing configuration to file: exercitium2/stack.yaml
+All done.
+/home/chema/.stack/templates/new-template.hsfiles:    6.06 KiB downloaded...
