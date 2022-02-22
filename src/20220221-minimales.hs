@@ -15,7 +15,7 @@ module Minimales where
 
 import Data.List ((\\))
 
-minimales :: [[Int]] -> [[Int]]
+minimales :: Ord a => [[a]] -> [[a]]
 minimales [] = []
 minimales (xs : xss)
   | any (xs ⊆) xss = minimales xss
