@@ -22,4 +22,4 @@ minimales (xs : xss)
   | otherwise = xs : minimales (filter (⊈ xs) xss)
   where
     xs ⊆ ys = null $ xs \\ ys
-    xs ⊈ ys = not . null $ xs \\ ys
+    xs ⊈ ys = not $ xs ⊆ ys
